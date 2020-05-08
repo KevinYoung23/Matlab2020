@@ -30,6 +30,6 @@ set(gcf, 'color', 'white')
 %adding axis labels
 xlim([0, 1])
 ylim([-1, 1])
-xlabel('t/2*\pi', 'Fontname', 'Greek', 'Fontsize', 18)
+xlabel('t/2\pi', 'Fontname', 'Greek', 'Fontsize', 18)
 ylabel('S(t)',  'Fontname', 'Greek', 'Fontsize', 18)
 
