@@ -9,7 +9,7 @@ E = E0 * (exp(-kix) .* exp(-1j*krx));
 figure('position', [300, 200, 950, 410])
 %plot side by side 
 subplot(1, 2, 1)
-p = plot(krx/(2*pi), real(E/E0))
+p = plot(krx/(2*pi), real(E/E0), )
 set(p, 'Color', 'red')
 xlim([0, 10])
 ylim([-1, 1])
