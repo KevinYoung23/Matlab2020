@@ -5,7 +5,7 @@ figure
 %give each plot a handle ('p' and 'q')
 %control its width and color
 %change line pattern
-p = plot(t/(2*pi), real (s), '');
+p = plot(t/(2*pi), real (s), '*-');
 set(p, 'Color', 'blue', 'LineWidth', 2)
 hold on
 q = plot(t/(2*pi), imag(s), '--')
@@ -13,6 +13,8 @@ set(q, 'Color', 'red', 'LineWidth', 2)
 
 %add a legend
 legend('Real(s)', 'Imag(s)')
+
+title('S(t) = exp(jt)')
 
 %gca refers to chart
 set(gca, 'LineWidth', 2)
@@ -26,6 +28,8 @@ set(gca, 'Fontweight', 'bold')
 set(gcf, 'color', 'white')
 
 %adding axis labels
-xlabel('t/2*pi', 'Fontname', 'Times', 'Fontsize', 24 ,'Fontweight', 'bold')
-ylabel('S(t)',  'Fontname', 'Times', 'Fontsize', 24 ,'Fontweight', 'bold')
+xlim([0, 1])
+ylim([-1, 1])
+xlabel('t/2*\pi', 'Fontname', 'Greek', 'Fontsize', 18)
+ylabel('S(t)',  'Fontname', 'Greek', 'Fontsize', 18)
 
