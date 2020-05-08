@@ -10,7 +10,7 @@ subplot(2, 1, 1)
 p = plot(t/(2*pi), real(s))
 set(p, 'Color', 'blue', 'Linewidth', 2)
 title('Real Part')
-xlabel('t/\pi', 'Fontsize', 18, 'Fontname', 'Times')
+xlabel('t/2\pi', 'Fontsize', 18, 'Fontname', 'Times')
 ylabel('S(t)', 'Fontsize', 18, 'Fontname', 'Times')
 
 %Imaginary Part
@@ -19,6 +19,6 @@ subplot(2, 1, 2)
 q = plot(t/(2*pi), imag(s))
 set(q, 'Color', 'red', 'Linewidth', 2)
 title('Imaginary Part')
-xlabel('t/\pi', 'Fontsize', 18, 'Fontname', 'Times')
+xlabel('t/2\pi', 'Fontsize', 18, 'Fontname', 'Times')
 ylabel('S(t)', 'Fontsize', 18, 'Fontname', 'Times')
 
