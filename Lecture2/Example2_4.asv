@@ -1,0 +1,4 @@
+x = linspace(-2, 2, 21);
+y = linspace(-2, 2, 21);
+[X, Y] = =meshgrid(x, y);
+Z = exp(-())
